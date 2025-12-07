@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Taste</title>
+  <link rel="shortcut icon" href="./images/page-logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-0 my-0  pe-3" href="#"><img src="./images/restro-logo.png" height="80" width="100">
+          <span class="urban">URBAN</span><span class="taste">Taste</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5 fw-bold pe-5" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 fw-bold pe-5" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  fs-5 fw-bold pe-5" href="menu.html" role="button" aria-expanded="false">
+                Menu
+              </a>
+              <!-- <ul class="dropdown-menu fs-5 fw-bold pe-0  bg-warning ">
+                <li><a class="dropdown-item" href="#veg">VEG</a></li>
+                <li><a class="dropdown-item " href="#non-veg">NON-VEG</a></li>
+
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-5 fw-bold pe-5" aria-disabled="true" href="#foot">Contact</a>
+            </li>
+          </ul>
+          <div class=" search-bar d-flex justify-content-between">
+            <form class=" input-group w-75" role="search">
+              <input class="form-control bg-body-tertiary " type="search" placeholder="Search items"
+                aria-label="Search">
+              <button class="btn bi bi-search bg-warning" type="submit"></button>
+            </form>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#login">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Login  -modal......... -->
+
+
+  <div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light" style="width: 85%;">
+        <form class="px-4 py-3"
+          style="display: flex; justify-content:center; align-items:center; flex-direction: column;">
+          <div class="text-start fs-2 fw-bold"><span class="bi bi-person-fill"></span> Log In</div>
+          <div class="mb-3 w-100">
+            <label class="fw-bold">Email</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+
+          <div class="mb-3 w-100">
+            <label class="fw-bold">Password</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="d-flex justify-content-between mb-3 w-100">
+            <div>
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+
+          <button class="btn btn-warning w-50 ">Login</button>
+
+        </form>
+        <div class="p-4 text-center">
+          <span>Don't have Account? <a href="#registration" data-bs-toggle="modal" data-bs-target="#registration"
+              class="text-decoration-none">Resister</a> Here. </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Ragistration modal.......... -->
+
+
+
+  <div class="modal fade" id="registration" style="--bs-modal-width: 550px;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <form class="row g-3 px-4 py-3">
+          <div class="text-center fs-2 fw-bold"><span class="bi bi-person-circle"></span>Register</div>
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="Enter phone number" required pattern="[0-9]{10}">
+          </div>
+
+          <div class="col-md-12">
+            <label class="fw-bold form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Create password">
+          </div>
+
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Confirm password">
+          </div>
+
+          <div class="col-12 pt-2 d-flex justify-content-center">
+            <button class="btn btn-success w-50">Register</button>
+          </div>
+        </form>
+        <div class="p-3 text-center">Back to the <a href="#login" class="text-decoration-none" data-bs-toggle="modal"
+            data-bs-target="#login">Log In</a> Page</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="position-relative" id="home">
+      <div class="hero-section ">
+        <!-- <div class="hero-fade "> -->
+        <!-- carousel start -->
+
+        <div id="Indicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Indicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#Indicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#Indicators" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#Indicators" data-bs-slide-to="3"></button>
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item  c-item-1 active  hero-section" data-bs-interval="3000">
+              <div class="hero-fade"></div>
+            </div>
+            <div class="carousel-item c-item-2 hero-section " data-bs-interval="3000">
+              <div class="hero-fade"></div>
+            </div>
+            <div class="carousel-item c-item-3  hero-section " data-bs-interval="3000">
+              <div class="hero-fade"></div>
+            </div>
+            <div class="carousel-item c-item-4  hero-section " data-bs-interval="3000">
+              <div class="hero-fade"></div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#Indicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#Indicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+
+        <!-- carousel end -->
+
+      </div>
+      <div class=" d-flex justify-content-center align-items-center  text-container ">
+        <div class="hero-content d-flex flex-column justify-content-between align-items-center">
+          <div class="hc-1 text-center">Welcome to The<span class="text-warning"> Urban Taste</span></div>
+          <div class="hc-2 text-center">Experience the delightful taste of out exquisite culsine</div>
+          <a href="menu.html"> <button class="btn view-menu-btn  btn-outline-warning">View Manu</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- welome -->
+    <div class="resto-welcome ">
+      <div class="resto-welcome-fade">
+        <div class="welcome-content-box d-flex justify-content-center align-items-center h-100 w-100">
+          <div class="welcome-content-img  d-flex justify-content-end">
+            <div class="w-50 text-light paragraph">
+              <center>
+                <p class="welcome-title"> Welcome to The<span class="text-warning"> "Urban Taste"</span></p>
+              </center>
+              <p class=" para" style="text-indent: 40px;"> Where every meal is crafted with care, warmth, and
+                authentic flavors.
+                Step inside and discover a place where good food meets a peaceful, comforting ambience.</p>
+
+              <p class=" para" style="text-indent: 40px;"> At<i class="fw-bold text-warning"> The Urban
+                  Taste</i>,<span> we believe in serving dishes made with fresh ingredients, traditional recipes, and a
+                  modern touch. Whether you’re here for a family dinner, a cozy date, or a casual bite, we promise a
+                  delicious experience you’ll always remember.</span></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- menu-cards -->
+    <div class="speciality-container">
+      <div class="text-center fw-bold special-title pt-3" style="height: 4rem;">Our Speciality</div>
+      <div class="special-box  d-flex justify-content-center align-items-center">
+        <div class="card special-card">
+          <div class="card-header s-card-img  s-card-1 ">
+
+          </div>
+          <div class="card-body s-card-body">
+            <div class="card-title text-center fw-bold fs-3"> Mix Burger</div>
+            <div>A juicy, freshly grilled patty tucked inside a soft toasted bun, topped with crisp veggies, melted
+              cheese, and our special house sauce. </div>
+          </div>
+        </div>
+
+        <div class="card special-card  ">
+          <div class="card-header s-card-img s-card-2">
+
+          </div>
+          <div class="card-body s-card-body">
+            <div class="card-title text-center fw-bold fs-3">Flameburst Biryani</div>
+            <div>A rich and aromatic biryani cooked on dum with tender meat, fragrant basmati rice, and a burst of
+              smoky, spicy flavors in every bite. </div>
+          </div>
+        </div>
+
+        <div class="card special-card ">
+          <div class="card-header s-card-img s-card-3 ">
+
+          </div>
+          <div class="card-body s-card-body">
+            <div class="card-title text-center fw-bold fs-3">Volcano Tandoori Chicken</div>
+            <div>Fiery, smoky tandoori chicken with bold spices and a hot, lava-style finish. </div>
+          </div>
+        </div>
+
+        <div class="card special-card  ">
+          <div class="card-header s-card-img s-card-4">
+
+          </div>
+          <div class="card-body s-card-body">
+            <div class="card-title text-center fw-bold fs-3">Aloo Paratha</div>
+            <div>Soft, golden parathas stuffed with spiced potato filling, served hot with fresh curd and a dollop of
+              melting butter. Perfectly comforting and delicious. </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <footer>
+    <div class="footer-container" id="foot" style="background-color: #2b3035;">
+      <div class="footer-flex-content">
+        <div class="footer-box  d-flex flex-wrap text-light">
+          <div class=" h-100 para-section">
+            <div class="text-center"><span class="urban fs-2 ">URBAN</span> <span class="taste"> Taste</span></div>
+            <div class="p-2 text-start quotes" style="font-size:16px ;">
+              <p>“Serving fresh, flavorful dishes crafted with passion and authenticity. Good food, good mood.”</p>
+              <p>“Where great food meets great vibes. Come as guests, leave as family.”</p>
+              <ul class="list-unstyled foot-list">
+                <li> “A modern dining experience inspired by India’s rich culinary heritage.”</li>
+
+                <li>“Premium flavors, fresh ingredients, and unforgettable ambience.”</li>
+
+                <li> “Where tradition meets innovation - one plate at a time.”</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="  link-section h-100 ">
+            <h2 class="text-warning fs-5 mb-4 pt-4 fw-bold text-start ps-4">Quick Links</h2>
+            <ul class=" quick-links  ps-4 list-unstyled ">
+              <a href="#home">
+                <li class="mb-3">Home</li>
+              </a>
+              <a href="#">
+                <li class="mb-3">About</li>
+              </a>
+              <a href="menu.html">
+                <li class="mb-3">Menu</li>
+              </a>
+              <a href="#foot">
+                <li class="mb-3">Contact</li>
+              </a>
+              <a href="#">
+                <li class="mb-3">Privacy Policy</li>
+              </a>
+              <a href="#">
+                <li class="mb-3">Terms & Service</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class=" text-center ps-4 h-100" style="background-color: #2b3035; ">
+            <h2 class="text-warning text-start fs-5 pe-5 mb-4 me-5 fw-bold pt-4">Contact Us</h2>
+            <div class="text-start text-light">
+              <p><span class="bi bi-geo-alt-fill me-2"></span><a style="text-decoration: none; color: inherit;"
+                  href="https://maps.app.goo.gl/xUTQ4XxhHoc9SVxZA">Asian Satyam Mall, Ameerpet, Hyderabad</a></p>
+              <p><span class="bi bi-telephone-fill me-2"></span><a href="tel:+91 987654321"></a>+91 987654321</p>
+              <p><span class="bi bi-envelope-fill me-2"></span><a style="text-decoration: none; color: inherit;"
+                  href="mailto:satyaranjanmoharana77@gmail.com">satyaranjanmoharana77@gmail.com</a></p>
+              <p><span class="bi bi-clock me-2"></span>Mon-Sun:10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="social-media fs-4 d-flex justify-content-start align-items-center text-light" style="gap: 7%;">
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-facebook "></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-instagram"></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-twitter"></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center " style="height: 4rem; background-color:#272b2f;">
+      <div class="copy-foot h-100 d-flex justify-content-between align-items-center text-secondary">
+        <div class="foot-con-1 text-center">
+          <span>&copy; 2025 Urban Taste </span> |
+          <span>Design by Satyaranjan7777</span> |
+          <span> All rights Reserved.</span>
+        </div>
+        <div class="foot-con-2">
+          <span><i>MASTER CARD</i></span>
+          <span><i>PAYPAL</i></span>
+          <span><i>VISA</i></span>
+          <span><i>FEDEX</i></span>
+          <span><i>DHL</i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (orientation:landscape) {
+
+
+    header {
+        background: linear-gradient(to right, #ed0000, #ffa500);
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    nav {
+        background-color: rgba(158, 4, 4, 0.253);
+    }
+
+    .urban {
+        font-size: 25px;
+
+        color: rgb(243, 140, 66);
+        font-family: "Snap ITC";
+        text-shadow: 1px 1px 1px rgb(132, 0, 0);
+    }
+
+    .taste {
+        font-size: 28px;
+        font-family: "Magneto"
+    }
+
+    .hero-section {
+        height: 40rem;
+        width: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .search-bar {
+        width: 30%;
+    }
+
+    .hero-fade {
+        background: radial-gradient(circle at center, #1a1a1aad, #ff7b0014);
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .text-container {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        width: 82%;
+        height: 60%;
+    }
+
+    .c-item-1 {
+        background-image: url('../images/banner-2.jpg');
+    }
+
+    .c-item-2 {
+        background-image: url(../images/banner-1.jpeg);
+    }
+
+    .c-item-3 {
+        background-image: url(../images/banner-3.jpg);
+    }
+
+    .c-item-4 {
+        background-image: url(../images/banner-4.jpg);
+    }
+
+    .hero-content {
+        height: 70%;
+        width: 60%;
+        margin-top: 5%;
+        gap: 5%;
+    }
+
+    .hc-1 {
+        font-size: 60px;
+        color: white;
+        font-family: Serif;
+        font-weight: bold;
+    }
+
+    .hc-2 {
+        font-size: 20px;
+        color: white;
+        font-family: Serif;
+        font-weight: 500;
+
+    }
+
+    .view-menu-btn {
+        background-color: rgba(0, 0, 0, 0.378);
+    }
+
+    .resto-welcome {
+        height: 55rem;
+        width: 100%;
+        background-image: url(../images/banner-5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .resto-welcome-fade {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.805);
+    }
+
+    .paragraph {
+        font-family: "Kristen ITC"
+    }
+
+    .welcome-content-img {
+        height: 70%;
+        width: 80%;
+        background-image: url(../images/main-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .welcome-title {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: system-ui;
+        color: rgb(255, 132, 0);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .para {
+        text-shadow: 1px 1px 1px black;
+        color: #ffa500;
+        font-size: 26px;
+    }
+
+    .speciality-container {
+        height: 30rem;
+        width: 100%;
+        background-color: #ffa500;
+    }
+
+    .special-box {
+        height: calc(30rem - 4rem);
+        width: 100%;
+
+        gap: 20px;
+    }
+
+    .special-title {
+        font-size: 30px;
+
+    }
+
+    .special-card {
+        height: 90%;
+        width: 19%;
+    }
+
+    .special-card:hover {
+        box-shadow: inset 0px 38px 83px 13px orange;
+    }
+
+    .s-card-img {
+        height: 50%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card-title {
+        font-family: Serif;
+    }
+
+    .s-card-body {
+        font-family: serif;
+    }
+
+    .s-card-1 {
+        background-image: url(../images/item-4.jpg);
+    }
+
+    .s-card-2 {
+        background-image: url(../images/biriyani.avif);
+    }
+
+    .s-card-3 {
+        background-image: url(../images/tandoori-chi.jpg);
+    }
+
+    .s-card-4 {
+        background-image: url(../images/paratha.avif);
+    }
+
+
+
+
+
+
+
+
+
+
+    /* footer section */
+    .footer-container {
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .table td {
+        padding: 0.4rem .5rem;
+    }
+
+    .footer-flex-content {
+        display: flex;
+    }
+
+    .quick-links a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-media a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+    }
+
+    .social-icon:hover {
+        background-color: #3e3e3e;
+        border: none;
+    }
+
+    .copy-foot {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #272b2f;
+        color: rgba(205, 205, 205, 0.6);
+    }
+
+    .footer-box {
+        height: 100%;
+        width: 70%;
+        gap: 10%;
+    }
+
+    .para-section {
+        width: 40%;
+        background-color: #2b3035;
+    }
+
+    .link-section {
+        width: 20%;
+        background-color: #2b3035;
+    }
+
+    .foot-con-2 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: rgba(128, 128, 128, 0.353);
+    }
+
+    /* .............menu-page............ */
+
+    .menu-hero {
+        height: 40rem;
+        width: 100%;
+        background-image: url('../images/banner6.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .menu-hero-fade {
+        height: 100%;
+        width: 100%;
+        background-color: #00000096;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-hero-content-box {
+        height: 100%;
+        width: 90%;
+        display: flex;
+
+    }
+
+    .menu-hero-content {
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-hero-img {
+        height: 100%;
+        width: 50%;
+        position: relative;
+
+    }
+
+    .png-img-1 {
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        right: -76px;
+        top: -60px;
+    }
+
+    .png-img-2 {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 35%;
+        top: 30%;
+
+    }
+
+    .menu-hero-content-text {
+
+        width: 70%;
+    }
+
+    .menu-hero-content-text p {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: "Pristina";
+        color: #fffe00;
+    }
+
+    /* card section.......... */
+
+    .card-row-container {
+        height: 20rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffed;
+
+    }
+
+    .card-row {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .item-card {
+        height: 98%;
+        width: 17%;
+        box-shadow: 1px 2px 5px orange;
+        background-color: #ffe8bd;
+
+    }
+
+    .item-card:hover {
+        box-shadow: inset 0px 38px 83px 13px orange;
+    }
+
+    .item-card-img {
+        height: 60%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .item-card-img:hover {
+        transform: scale(1.011);
+    }
+
+    .i-c-img-1 {
+        background-image: url('../images/baby-corn-manchurian.jpg');
+    }
+
+    .i-c-img-2 {
+        background-image: url('../images/paneer-tikka.jpg');
+    }
+
+    .i-c-img-3 {
+        background-image: url('../images/Palak-Paneer.jpg');
+    }
+
+    .i-c-img-4 {
+        background-image: url('../images/matar-paneer.jpg');
+    }
+
+    .i-c-img-5 {
+        background-image: url('../images/mix-veg-curry.jpg');
+    }
+
+    .i-c-img-6 {
+        background-image: url('../images/dal\ makhani.gif');
+    }
+
+    .i-c-img-7 {
+        background-image: url('../images/vegetable-biryani.jpg');
+    }
+
+    .i-c-img-8 {
+        background-image: url('../images/naan.jpg');
+    }
+
+    .i-c-img-9 {
+        background-image: url('../images/jeera-rice.jpg');
+    }
+
+    .i-c-img-10 {
+        background-image: url('../images/pulao.jpg');
+    }
+
+    .i-c-img-11 {
+        background-image: url('../images/tandoori-chi.jpg');
+    }
+
+    .i-c-img-12 {
+        background-image: url('../images/Mutton-Curry.jpg');
+    }
+
+    .i-c-img-13 {
+        background-image: url('../images/chicken\ curry.jpg');
+    }
+
+    .i-c-img-14 {
+        background-image: url('../images/tandoori\ chicken.jpg');
+    }
+
+    .i-c-img-15 {
+        background-image: url('../images/biriyani.avif');
+    }
+
+    .i-c-img-16 {
+        background-image: url('../images/Mutton-Curry.jpg');
+    }
+
+    .i-c-img-17 {
+        background-image: url('../images/mutton\ biriyani.jpg');
+    }
+
+    .i-c-img-18 {
+        background-image: url('../images/tandoori\ chicken.jpg');
+    }
+
+    .i-c-img-19 {
+        background-image: url('../images/naan.jpg');
+    }
+
+    .i-c-img-20 {
+        background-image: url('../images/mutton\ thali.webp');
+    }
+}
+
+
+
+
+@media screen and (orientation: portrait) {
+
+
+    header {
+        background: linear-gradient(to right, #ed0000, #ffa500);
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    nav {
+        background-color: rgba(158, 4, 4, 0.253);
+    }
+
+    .urban {
+        font-size: 25px;
+
+        color: rgb(243, 140, 66);
+        font-family: "Snap ITC";
+        text-shadow: 1px 1px 1px rgb(132, 0, 0);
+    }
+
+    .taste {
+        font-size: 28px;
+        font-family: "Magneto"
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: 40rem;
+        width: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .hero-fade {
+        background: radial-gradient(circle at center, #1a1a1aad, #ff7b0014);
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .text-container {
+        position: absolute;
+        top: 15%;
+        left: 9%;
+        width: 82%;
+        height: 60%;
+    }
+
+    .c-item-1 {
+        background-image: url('../images/banner-2.jpg');
+    }
+
+    .c-item-2 {
+        background-image: url(../images/banner-1.jpeg);
+    }
+
+    .c-item-3 {
+        background-image: url(../images/banner-3.jpg);
+    }
+
+    .c-item-4 {
+        background-image: url(../images/banner-4.jpg);
+    }
+
+    .hero-content {
+        height: 70%;
+        width: 100%;
+        margin-top: 5%;
+        gap: 5%;
+    }
+
+    .hc-1 {
+        font-size: 45px;
+        color: white;
+        font-family: Serif;
+        font-weight: bold;
+    }
+
+    .hc-2 {
+        font-size: 20px;
+        color: white;
+        font-family: Serif;
+        font-weight: 500;
+
+    }
+
+    .view-menu-btn {
+        background-color: rgba(0, 0, 0, 0.378);
+    }
+
+    .resto-welcome {
+        height: 35rem;
+        width: 100%;
+        background-image: url(../images/banner-5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .resto-welcome-fade {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.805);
+    }
+
+    .paragraph {
+        font-family: "Kristen ITC"
+    }
+
+    .welcome-content-img {
+        height: 60%;
+        width: 100%;
+        background-image: url(../images/main-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .welcome-title {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: system-ui;
+        color: rgb(255, 132, 0);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .para {
+        font-size: 11px;
+        text-shadow: 1px 1px 1px black;
+        color: #ffa500;
+    }
+
+    .speciality-container {
+        height: 101rem;
+        width: 100%;
+        background-color: #ffa500;
+    }
+
+    .special-box {
+        height: 26rem;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .special-title {
+        font-size: 30px;
+
+    }
+
+    .special-card {
+        height: 90%;
+        width: 90%;
+    }
+
+    .special-card:hover {
+        box-shadow: inset 0px 38px 83px 13px orange;
+    }
+
+    .s-card-img {
+        height: 50%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card-title {
+        font-family: Serif;
+    }
+
+    .s-card-body {
+        font-family: serif;
+    }
+
+    .s-card-1 {
+        background-image: url(../images/item-4.jpg);
+    }
+
+    .s-card-2 {
+        background-image: url(../images/biriyani.avif);
+    }
+
+    .s-card-3 {
+        background-image: url(../images/tandoori-chi.jpg);
+    }
+
+    .s-card-4 {
+        background-image: url(../images/paratha.avif);
+    }
+
+
+
+
+
+
+
+
+
+
+    /* footer section */
+    .footer-container {
+        height: 50rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .table td {
+        padding: 0.4rem .5rem;
+    }
+
+    .foot-list {
+        display: none;
+    }
+
+    .quick-links a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-media a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-icon {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+    }
+
+    .social-icon:hover {
+        background-color: #3e3e3e;
+        border: none;
+    }
+
+
+    .copy-foot {
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #272b2f;
+        color: rgba(205, 205, 205, 0.6);
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .foot-con-2 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: rgba(128, 128, 128, 0.353);
+        display: none;
+    }
+
+    .para-section {
+        width: 100%;
+        background-color: #2b3035;
+    }
+
+    .link-section {
+        width: 100%;
+        background-color: #2b3035;
+    }
+
+    /* .............menu-page............ */
+
+    .menu-hero {
+        height: 25rem;
+        width: 100%;
+        background-image: url('../images/banner6.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .menu-hero-fade {
+        height: 100%;
+        width: 100%;
+        background-color: #00000096;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-hero-content-box {
+        height: 100%;
+        width: 90%;
+        display: flex;
+
+    }
+
+    .menu-hero-content {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-hero-img {
+        height: 100%;
+
+        position: relative;
+
+    }
+
+    .png-img-1 {
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        right: -76px;
+        top: -60px;
+        display: none;
+    }
+
+    .png-img-2 {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 35%;
+        top: 30%;
+        display: none;
+
+    }
+
+    .menu-hero-content-text {
+
+        width: 100%;
+    }
+
+    .menu-hero-content-text p {
+        font-size: 55px;
+        font-weight: bold;
+        font-family: "Pristina";
+        color: #fffe00;
+        text-align: center;
+    }
+
+    /* card section.......... */
+
+    .card-row-container {
+        height: 70rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffed;
+
+    }
+
+    .card-row {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+
+    }
+
+    .item-card {
+        height: 30%;
+        width: 49%;
+        box-shadow: 1px 2px 5px orange;
+        background-color: #ffe8bd;
+
+    }
+
+    .item-card:hover {
+        box-shadow: inset 0px 38px 83px 13px orange;
+    }
+
+    .item-card-img:hover {
+        transform: scale(1.011);
+    }
+
+    .item-card-img {
+        height: 60%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+
+    }
+
+    .i-c-img-1 {
+        background-image: url('../images/baby-corn-manchurian.jpg');
+    }
+
+    .i-c-img-2 {
+        background-image: url('../images/paneer-tikka.jpg');
+    }
+
+    .i-c-img-3 {
+        background-image: url('../images/Palak-Paneer.jpg');
+    }
+
+    .i-c-img-4 {
+        background-image: url('../images/matar-paneer.jpg');
+    }
+
+    .i-c-img-5 {
+        background-image: url('../images/mix-veg-curry.jpg');
+    }
+
+    .i-c-img-6 {
+        background-image: url('../images/dal\ makhani.gif');
+    }
+
+    .i-c-img-7 {
+        background-image: url('../images/vegetable-biryani.jpg');
+    }
+
+    .i-c-img-8 {
+        background-image: url('../images/naan.jpg');
+    }
+
+    .i-c-img-9 {
+        background-image: url('../images/jeera-rice.jpg');
+    }
+
+    .i-c-img-10 {
+        background-image: url('../images/pulao.jpg');
+    }
+
+    .i-c-img-11 {
+        background-image: url('../images/tandoori-chi.jpg');
+    }
+
+    .i-c-img-12 {
+        background-image: url('../images/Mutton-Curry.jpg');
+    }
+
+    .i-c-img-13 {
+        background-image: url('../images/chicken\ curry.jpg');
+    }
+
+    .i-c-img-14 {
+        background-image: url('../images/tandoori\ chicken.jpg');
+    }
+
+    .i-c-img-15 {
+        background-image: url('../images/biriyani.avif');
+    }
+
+    .i-c-img-16 {
+        background-image: url('../images/Mutton-Curry.jpg');
+    }
+
+    .i-c-img-17 {
+        background-image: url('../images/mutton\ biriyani.jpg');
+    }
+
+    .i-c-img-18 {
+        background-image: url('../images/tandoori\ chicken.jpg');
+    }
+
+    .i-c-img-19 {
+        background-image: url('../images/naan.jpg');
+    }
+
+    .i-c-img-20 {
+        background-image: url('../images/mutton\ thali.webp');
+    }
+}
