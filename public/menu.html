@@ -10,13 +10,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./src/style.css">
+ <script src="./src/script.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand mx-0 my-0  pe-3" href="#"><img src="./images/restro-logo.png" height="80" width="100">
+        <a class="navbar-brand mx-0 my-0  pe-3" href="#"><img class="pe-1" src="./images/page-logo - Copy.png" height="40" width="60">
           <span class="urban">URBAN</span><span class="taste">taste</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -175,24 +176,24 @@
           <form class="p-4">
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Name</lable>
-              <input class="form-control" type="text" name="name">
+              <input class="form-control" required type="text" name="name">
             </div>
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Email</lable>
-              <input class="form-control" type="email" name="email">
+              <input class="form-control" required type="email" name="email">
 
             </div>
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Location</lable>
-              <input class="form-control" type="text" name="location">
+              <input class="form-control" required type="text" name="location">
             </div>
             <div class="mb-3">
               <label class="form-label fw-bold" for="">Quantity</label>
-              <input class="form-control" type="number" name="quantity" size="2" minlength="1" maxlength="2">
+              <input class="form-control" required type="number" name="quantity" size="2" minlength="1" maxlength="2">
             </div>
             <div class=" text-end">
-              <button class="btn btn-danger " data-bs-dismiss="modal" data-bs-target="#order">Close</button>
-              <button type="submit" class="btn btn-success " data-bs-dismiss="modal" data-bs-target="#order">Place
+              <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#cancel" >Close</button>
+              <button type="submit" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#success"  >Place
                 Order</button>
             </div>
           </form>
@@ -201,22 +202,50 @@
       </div>
     </div>
     <!-- modal end............ -->
-    <div class="menu-container">
-      <h1 class="pt-5 text-Dark text-center fw-bold " id="menu-item"
+
+    <!-- success modal >>>>>>>>>>>>>>>>>>>> -->
+
+    <div class="modal fade" id="success">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" d-flex justify-content-center align-items-center text-success" style="height: 200px;">
+            <h1>Order Successful...!</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+     <div class="modal fade" id="cancel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" d-flex justify-content-center align-items-center text-danger" style="height: 200px;">
+            <h1>Order Canceled...!</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- success modal-end >>>>>>>>>>>>>>>>>>>> -->
+    <div class="menu-container" id="menu-item">
+      <h1 class="pt-5 text-Dark text-center fw-bold "  
         style="font-family: system-ui; background-color: aliceblue; margin: 0px;">Discover Our Menu</h1>
 
-      <h2 class="pt-5 pb-3 text-success text-center fw-bold " id="veg"
-        style="font-family: system-ui; background-color: aliceblue;">Vegeterian Dishes</h2>
+      <div class="pt-5 pb-3 text-success text-center fw-bold " id="veg"
+        style="font-family: system-ui; background-color: aliceblue;">
+        <h2 class="pt-4">VEGITERIAN DISHES</h2>
+      </div>
       <div class="card-row-container">
 
         <div class="card-row">
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-1 "></div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Baby Corn</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
                   Now</button>
               </div>
             </div>
@@ -224,10 +253,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-2"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Paneer Tikka</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Paneer Tikka</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 170</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -236,10 +265,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-3"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Palak Paneer</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Palak Paneer</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 170</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -248,10 +277,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-4"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Matar Paneer</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Matar Paneer</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 150</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 150</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -260,11 +289,23 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-5"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mix-Veg Curry</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mix-Veg Curry</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 130</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 130</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- new card............. -->
+              <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
                   Now</button>
               </div>
             </div>
@@ -278,10 +319,10 @@
         <div class="card-row">
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-6 "></div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Dal Makhani</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Dal Makhani</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 100</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 100</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -290,10 +331,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-7"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Veg-Biriyani</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Veg-Biriyani</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 270</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -302,10 +343,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-8"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4"> Butter NaN</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4"> Butter NaN</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 50</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -314,10 +355,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-9"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Jeera Rice</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Jeera Rice</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 230</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -326,33 +367,46 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-10"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Pulao</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Pulao</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 250</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
           </div>
-
+              <!-- new card............. -->
+              <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
 
 
-      <h2 class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
-        style="font-family: system-ui; background-color: aliceblue;">Non-Vegeterian Dishes</h2>
+     <div class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
+        style="font-family: system-ui; background-color: aliceblue;">
+       <h2 class="pt-4">NON-VEGETERIAN DISHES</h2>
+     </div>
 
       <div class="card-row-container">
 
         <div class="card-row">
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-11 "></div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Tnd. Chicken</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Tnd. Chicken</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 300</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 300</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -361,10 +415,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-12"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mixed Kebab</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mixed Kebab</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 270</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -373,10 +427,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-13"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Chicken Curry</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Curry</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 230</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -385,10 +439,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-14"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Chicken Tikka </h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Tikka </h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 350</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 350</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -397,11 +451,24 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-15"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Chicken Biriyani</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Biriyani</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 250</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+              <!-- new card............. -->
+              <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
                   Now</button>
               </div>
             </div>
@@ -416,10 +483,10 @@
         <div class="card-row">
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-16 "></div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mutton Curry</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Curry</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 270</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -428,10 +495,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-17"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mutton Biriyani</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Biriyani</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 280</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 280</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -440,10 +507,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-18"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mutton Gravy</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Gravy</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 250</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -452,10 +519,10 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-19"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Butter NaN</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Butter NaN</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 50</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
@@ -464,11 +531,24 @@
 
           <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-20"> </div>
-            <div class="card-body">
-              <h3 class="fs-5 fw-bold mt-1 mb-4">Mutton Thali</h3>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Thali</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
-                <div class="fs-5 "><span class="fw-bold text-success">&#8377 220</div>
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 220</div>
                 <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+              <!-- new card............. -->
+              <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
                   Now</button>
               </div>
             </div>
@@ -509,7 +589,7 @@
               <a href="#">
                 <li class="mb-3">About</li>
               </a>
-              <a href="menu.html">
+              <a href="#menu-item">
                 <li class="mb-3">Menu</li>
               </a>
               <a href="#foot">
