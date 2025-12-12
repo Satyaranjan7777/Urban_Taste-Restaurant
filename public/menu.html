@@ -91,97 +91,97 @@
 
 
 
-  
-    <div class="modal fade" id="login" style="--bs-modal-width: 450px;">
 
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark text-light">
-          <form class="px-4 py-3"
-            style="display: flex; justify-content:center; align-items:center; flex-direction: column;">
-            <div class="text-start fs-2 fw-bold"><span class="bi bi-person-fill"></span> Log In</div>
-            <div class="mb-3 w-100">
-              <label class="fw-bold">Email</label>
-              <input type="email" class="form-control" placeholder="Enter email">
-            </div>
+  <div class="modal fade" id="login" style="--bs-modal-width: 450px;">
 
-            <div class="mb-3 w-100">
-              <label class="fw-bold">Password</label>
-              <input type="password" class="form-control" placeholder="Enter password">
-            </div>
-
-            <div class="d-flex justify-content-between mb-3 w-100">
-              <div>
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label>
-              </div>
-              <a href="#" class="text-decoration-none">Forgot Password?</a>
-            </div>
-
-            <button class="btn btn-warning w-50 ">Login</button>
-
-          </form>
-          <div class="p-4 text-center">
-            <span>Don't have Account? <a href="#registration" data-bs-toggle="modal" data-bs-target="#registration"
-                class="text-decoration-none">Resister</a> Here. </span>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <form class="px-4 py-3"
+          style="display: flex; justify-content:center; align-items:center; flex-direction: column;">
+          <div class="text-start fs-2 fw-bold"><span class="bi bi-person-fill"></span> Log In</div>
+          <div class="mb-3 w-100">
+            <label class="fw-bold">Email</label>
+            <input type="email" class="form-control" placeholder="Enter email">
           </div>
+
+          <div class="mb-3 w-100">
+            <label class="fw-bold">Password</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="d-flex justify-content-between mb-3 w-100">
+            <div>
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+
+          <button class="btn btn-warning w-50 ">Login</button>
+
+        </form>
+        <div class="p-4 text-center">
+          <span>Don't have Account? <a href="#registration" data-bs-toggle="modal" data-bs-target="#registration"
+              class="text-decoration-none">Resister</a> Here. </span>
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
-    <!-- Ragistration modal.......... -->
+  <!-- Ragistration modal.......... -->
 
 
 
-    <div class="modal fade" id="registration" style="--bs-modal-width: 550px;">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark text-light">
-          <form class="row g-3 px-4 py-3">
-            <div class="text-center fs-2 fw-bold"><span class="bi bi-person-circle"></span>Register</div>
-            <div class="col-md-6">
-              <label class="fw-bold form-label">Full Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name">
-            </div>
+  <div class="modal fade" id="registration" style="--bs-modal-width: 550px;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <form class="row g-3 px-4 py-3">
+          <div class="text-center fs-2 fw-bold"><span class="bi bi-person-circle"></span>Register</div>
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
 
-            <div class="col-md-6">
-              <label class="fw-bold form-label">Phone Number</label>
-              <input type="tel" class="form-control" placeholder="Enter phone number" required pattern="[0-9]{10}">
-            </div>
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="Enter phone number" required pattern="[0-9]{10}">
+          </div>
 
-            <div class="col-md-12">
-              <label class="fw-bold form-label">Email Address</label>
-              <input type="email" class="form-control" placeholder="Enter email">
-            </div>
+          <div class="col-md-12">
+            <label class="fw-bold form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
 
-            <div class="col-md-6">
-              <label class="fw-bold form-label">Password</label>
-              <input type="password" class="form-control" placeholder="Create password">
-            </div>
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Create password">
+          </div>
 
-            <div class="col-md-6">
-              <label class="fw-bold form-label">Confirm Password</label>
-              <input type="password" class="form-control" placeholder="Confirm password">
-            </div>
+          <div class="col-md-6">
+            <label class="fw-bold form-label">Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Confirm password">
+          </div>
 
-            <div class="col-12 pt-2 d-flex justify-content-center">
-              <button class="btn btn-success w-50">Register</button>
-            </div>
-          </form>
-          <div class="p-3 text-center">Back to the <a href="#login" class="text-decoration-none" data-bs-toggle="modal"
-              data-bs-target="#login">Log In</a> Page</div>
-        </div>
+          <div class="col-12 pt-2 d-flex justify-content-center">
+            <button class="btn btn-success w-50">Register</button>
+          </div>
+        </form>
+        <div class="p-3 text-center">Back to the <a href="#login" class="text-decoration-none" data-bs-toggle="modal"
+            data-bs-target="#login">Log In</a> Page</div>
       </div>
     </div>
+  </div>
 
 
-    <!-- Table Booking-modal......... -->
-    <div class="modal fade theme-dark" id="table-booking">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+  <!-- Table Booking-modal......... -->
+  <div class="modal fade theme-dark" id="table-booking">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
 
-          <form class="px-4 pb-4 mt-4 w-75 text-dark" style="background-color: #be7fff42;">
+        <form class="px-4 py-3 text-dark" style="background-color: #be7fff42;">
           <h2 class="fw-bold text-center pt-3">Book Your Table</h2>
           <div class=" mb-3">
             <label class="fw-bold form-label">Full Name</label>
@@ -217,559 +217,527 @@
           </div>
 
         </form>
-                </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <section>
+    <div class="menu-hero">
+      <div class="menu-hero-fade">
+        <div class="menu-hero-content-box">
+          <div class="menu-hero-content">
+            <div class="menu-hero-content-text">
+              <p class="">
+                It's not just Food, it;s an Experience
+              </p>
+              <div class="text-center">
+                <a href="#menu-item"> <button class="btn btn-danger rounded-pill">View Menu</button></a>
+
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#table-booking">Book
+                  a Table</button>
 
               </div>
+            </div>
+          </div>
+          <div class=" menu-hero-img">
+            <img class="png-img-1" src="./images/png image-1.png" alt="png-image">
+            <img class="png-img-2" src="./images/png-image-2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu cards.......... -->
+    <!-- modal start......... -->
+
+
+    <div class="modal fade" id="order">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form class=" form p-4" id="Oform">
+            <div class="mb-3">
+              <lable class="form-label fw-bold">Enter Your Name</lable>
+              <input class="form-control" required id="OrdName" type="text" name="name">
+              <!-- // oninput="Datastore(event)" -->
+            </div>
+            <div class="mb-3">
+              <lable class="form-label fw-bold">Enter Your Email</lable>
+              <input class="form-control" required type="email" id="OrdEmail" name="email">
 
             </div>
+            <div class="mb-3">
+              <lable class="form-label fw-bold">Enter Your Location</lable>
+              <input class="form-control" required type="text" id="OrdLocation" name="location">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold" for="">Quantity</label>
+              <input class="form-control" required type="number" id="OrdQty" name="quantity" size="2">
+            </div>
+            <div class=" text-end">
+              <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#cancel"
+                data-bs-dismiss="modal">Close</button>
+              <button id="Obtn" type="submit" class="btn btn-success">Place
+                Order</button>
+            </div>
+          </form>
 
+        </div>
+      </div>
+    </div>
+    <!-- modal end............ -->
 
-            <section>
-              <div class="menu-hero">
-                <div class="menu-hero-fade">
-                  <div class="menu-hero-content-box">
-                    <div class="menu-hero-content">
-                      <div class="menu-hero-content-text">
-                        <p class="">
-                          It's not just Food, it;s an Experience
-                        </p>
-                        <div class="text-center">
-                          <a href="#menu-item"> <button class="btn btn-danger rounded-pill">View Menu</button></a>
+    <!-- success modal >>>>>>>>>>>>>>>>>>>> -->
 
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#table-booking">Book
-                            a Table</button>
+    <div class="modal fade" id="success">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" d-flex justify-content-center align-items-center text-success" style="height: 200px;">
+            <h1>Order Successful...!</h1>
+          </div>
 
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#table-booking">Book a Table</button>
+        </div>
+      </div>
+    </div>
 
-                        </div>
-                      </div>
-                    </div>
-                    <div class=" menu-hero-img">
-                      <img class="png-img-1" src="./images/png image-1.png" alt="png-image">
-                      <img class="png-img-2" src="./images/png-image-2.png" alt="">
-                    </div>
-                  </div>
-                </div>
+    <div class="modal fade" id="cancel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" d-flex justify-content-center align-items-center text-danger" style="height: 200px;">
+            <h1>Order Canceled...!</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- success modal-end >>>>>>>>>>>>>>>>>>>> -->
+    <div class="menu-container" id="menu-item">
+      <h1 class=" fs-1 pt-5 text-warning text-center fw-bold "
+        style="font-family: 'Forte'; background-color: rgb(243, 250, 220); margin: 0px;">Discover Our Menu
+      </h1>
+
+      <div class="pt-5 pb-3 text-success text-center fw-bold " id="veg"
+        style="font-family: system-ui; background-color:rgb(243, 250, 220);">
+        <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">VEGITERIAN DISHES</h2>
+      </div>
+      <div class="card-row-container">
+
+        <div class="card-row">
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
-              <!-- menu cards.......... -->
-              <!-- modal start......... -->
+            </div>
+          </div>
 
-
-              <div class="modal fade" id="order">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <form class=" form p-4" id="Oform">
-                      <div class="mb-3">
-                        <lable class="form-label fw-bold">Enter Your Name</lable>
-                        <input class="form-control" required id="OrdName" type="text" name="name">
-                        <!-- // oninput="Datastore(event)" -->
-                      </div>
-                      <div class="mb-3">
-                        <lable class="form-label fw-bold">Enter Your Email</lable>
-                        <input class="form-control" required type="email" id="OrdEmail" name="email">
-
-                      </div>
-                      <div class="mb-3">
-                        <lable class="form-label fw-bold">Enter Your Location</lable>
-                        <input class="form-control" required type="text" id="OrdLocation" name="location">
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label fw-bold" for="">Quantity</label>
-                        <input class="form-control" required type="number" id="OrdQty" name="quantity" size="2">
-                      </div>
-                      <div class=" text-end">
-                        <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#cancel"
-                          data-bs-dismiss="modal">Close</button>
-                        <button id="Obtn" type="submit" class="btn btn-success">Place
-                          Order</button>
-                      </div>
-                    </form>
-
-                  </div>
-                </div>
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-2"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Paneer Tikka</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
-              <!-- modal end............ -->
+            </div>
+          </div>
 
-              <!-- success modal >>>>>>>>>>>>>>>>>>>> -->
-
-              <div class="modal fade" id="success">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class=" d-flex justify-content-center align-items-center text-success" style="height: 200px;">
-                      <h1>Order Successful...!</h1>
-                    </div>
-
-                  </div>
-                </div>
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-3"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Palak Paneer</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
+            </div>
+          </div>
 
-              <div class="modal fade" id="cancel">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class=" d-flex justify-content-center align-items-center text-danger" style="height: 200px;">
-                      <h1>Order Canceled...!</h1>
-                    </div>
-
-                  </div>
-                </div>
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-4"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Matar Paneer</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 150</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
+            </div>
+          </div>
 
-              <!-- success modal-end >>>>>>>>>>>>>>>>>>>> -->
-              <div class="menu-container" id="menu-item">
-                <h1 class=" fs-1 pt-5 text-warning text-center fw-bold "
-                  style="font-family: 'Forte'; background-color: rgb(243, 250, 220); margin: 0px;">Discover Our Menu
-                </h1>
-
-                <div class="pt-5 pb-3 text-success text-center fw-bold " id="veg"
-                  style="font-family: system-ui; background-color:rgb(243, 250, 220);">
-                  <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">VEGITERIAN DISHES</h2>
-                </div>
-                <div class="card-row-container">
-
-                  <div class="card-row">
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-1 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-2"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Paneer Tikka</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-3"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Palak Paneer</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 170</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-4"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Matar Paneer</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 150</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-5"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mix-Veg Curry</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 130</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- new card............. -->
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-1 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-                <div class="card-row-container">
-
-                  <div class="card-row">
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-6 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Dal Makhani</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 100</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-7"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Veg-Biriyani</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-8"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4"> Butter NaN</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-9"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Jeera Rice</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-10"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Pulao</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- new card............. -->
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-1 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-
-                <div class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
-                  style="font-family: system-ui; background-color: rgb(243, 250, 220);">
-                  <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">NON-VEGETERIAN DISHES</h2>
-                </div>
-
-                <div class="card-row-container">
-
-                  <div class="card-row">
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-11 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Tnd. Chicken</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 300</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-12"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mixed Kebab</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-13"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Curry</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-14"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Tikka </h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 350</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-15"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Biriyani</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- new card............. -->
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-1 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-
-                <div class="card-row-container ">
-
-                  <div class="card-row">
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-16 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Curry</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-17"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Biriyani</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 280</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-18"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Gravy</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-19"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Butter NaN</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-20"> </div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Thali</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 220</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- new card............. -->
-                    <div class=" item-card card ">
-                      <div class=" item-card-img card-header i-c-img-1 "></div>
-                      <div class="card-body cd-body">
-                        <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
-                        <div class=" d-flex justify-content-around " style="gap: 10%;">
-                          <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                          <button class="btn btn-warning rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#order">Buy
-                            Now</button>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-5"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mix-Veg Curry</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 130</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
-
-            </section>
-
-            <footer>
-              <div class="footer-container" id="foot" style="background-color: #2b3035;">
-                <div class="footer-flex-content">
-                  <div class="footer-box  d-flex flex-wrap text-light">
-                    <div class=" h-100 para-section">
-                      <div class="text-center"><span class="urban fs-2 ">URBAN</span> <span class="taste">taste</span>
-                      </div>
-                      <div class="p-2 text-start quotes" style="font-size:16px ;">
-                        <p>“Serving fresh, flavorful dishes crafted with passion and authenticity. Good food, good
-                          mood.”</p>
-                        <p>“Where great food meets great vibes. Come as guests, leave as family.”</p>
-                        <ul class="list-unstyled foot-list">
-                          <li> “A modern dining experience inspired by India’s rich culinary heritage.”</li>
-
-                          <li>“Premium flavors, fresh ingredients, and unforgettable ambience.”</li>
-
-                          <li> “Where tradition meets innovation - one plate at a time.”</li>
-                        </ul>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="  link-section h-100 ">
-                      <h2 class="text-warning fs-5 mb-4 pt-4 fw-bold text-start ps-4">Quick Links</h2>
-                      <ul class=" quick-links  ps-4 list-unstyled ">
-                        <a href="index.html">
-                          <li class="mb-3">Home</li>
-                        </a>
-                        <a href="./about.html">
-                          <li class="mb-3">About</li>
-                        </a>
-                        <a href="#menu-item">
-                          <li class="mb-3">Menu</li>
-                        </a>
-                        <a href="#foot">
-                          <li class="mb-3">Contact</li>
-                        </a>
-                        <a href="https://www.wix.com/about/privacy">
-                          <li class="mb-3">Privacy Policy</li>
-                        </a>
-                        <a href="https://www.wix.com/about/terms-of-use">
-                          <li class="mb-3">Terms & Service</li>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <div class=" text-center ps-4 h-100" style="background-color: #2b3035; ">
-                      <h2 class="text-warning text-start fs-5 pe-5 mb-4 me-5 fw-bold pt-4">Contact Us</h2>
-                      <div class="text-start text-light">
-                        <p><span class="bi bi-geo-alt-fill me-2"></span><a
-                            style="text-decoration: none; color: inherit;"
-                            href="https://maps.app.goo.gl/xUTQ4XxhHoc9SVxZA">Asian Satyam Mall, Ameerpet, Hyderabad</a>
-                        </p>
-                        <p><span class="bi bi-telephone-fill me-2"></span><a href="tel:+91 987654321"></a>+91 987654321
-                        </p>
-                        <p><span class="bi bi-envelope-fill me-2"></span><a
-                            style="text-decoration: none; color: inherit;"
-                            href="mailto:satyaranjanmoharana77@gmail.com">satyaranjanmoharana77@gmail.com</a></p>
-                        <p><span class="bi bi-clock me-2"></span>Mon-Sun:10:00 AM - 11:00 PM</p>
-                      </div>
-                      <div class="social-media fs-4 d-flex justify-content-start align-items-center text-light"
-                        style="gap: 7%;">
-                        <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
-                            class="bi bi-facebook"></span></a>
-                        <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
-                            class="bi bi-instagram"></span></a>
-                        <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
-                            class="bi bi-twitter"></span></a>
-                        <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
-                            class="bi bi-youtube"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+            </div>
+          </div>
+          <!-- new card............. -->
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
-              <div class="d-flex justify-content-center align-items-center "
-                style="height: 4rem; background-color:#272b2f;">
-                <div class="copy-foot h-100 d-flex justify-content-between align-items-center text-secondary">
-                  <div class="foot-con-1 text-center">
-                    <span>&copy; 2025 Urban taste </span> |
-                    <span>Design by Satyaranjan7777</span> |
-                    <span> All rights Reserved.</span>
-                  </div>
-                  <div class="foot-con-2">
-                    <span><i>MASTER CARD</i></span>
-                    <span><i>PAYPAL</i></span>
-                    <span><i>VISA</i></span>
-                    <span><i>FEDEX</i></span>
-                    <span><i>DHL</i></span>
-                  </div>
-                </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="card-row-container">
+
+        <div class="card-row">
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-6 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Dal Makhani</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 100</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
               </div>
-            </footer>
-            <script src="./src/script.js"></script>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-7"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Veg-Biriyani</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-8"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4"> Butter NaN</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-9"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Jeera Rice</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-10"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Pulao</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- new card............. -->
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
+        style="font-family: system-ui; background-color: rgb(243, 250, 220);">
+        <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">NON-VEGETERIAN DISHES</h2>
+      </div>
+
+      <div class="card-row-container">
+
+        <div class="card-row">
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-11 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Tnd. Chicken</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 300</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-12"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mixed Kebab</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-13"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Curry</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 230</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-14"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Tikka </h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 350</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-15"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Chicken Biriyani</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- new card............. -->
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="card-row-container ">
+
+        <div class="card-row">
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-16 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Curry</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 270</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-17"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Biriyani</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 280</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-18"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Gravy</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 250</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-19"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Butter NaN</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 50</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-20"> </div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Mutton Thali</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 220</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- new card............. -->
+          <div class=" item-card card ">
+            <div class=" item-card-img card-header i-c-img-1 "></div>
+            <div class="card-body cd-body">
+              <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
+              <div class=" d-flex justify-content-around " style="gap: 10%;">
+                <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-container" id="foot" style="background-color: #2b3035;">
+      <div class="footer-flex-content">
+        <div class="footer-box  d-flex flex-wrap text-light">
+          <div class=" h-100 para-section">
+            <div class="text-center"><span class="urban fs-2 ">URBAN</span> <span class="taste">taste</span>
+            </div>
+            <div class="p-2 text-start quotes" style="font-size:16px ;">
+              <p>“Serving fresh, flavorful dishes crafted with passion and authenticity. Good food, good
+                mood.”</p>
+              <p>“Where great food meets great vibes. Come as guests, leave as family.”</p>
+              <ul class="list-unstyled foot-list">
+                <li> “A modern dining experience inspired by India’s rich culinary heritage.”</li>
+
+                <li>“Premium flavors, fresh ingredients, and unforgettable ambience.”</li>
+
+                <li> “Where tradition meets innovation - one plate at a time.”</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="  link-section h-100 ">
+            <h2 class="text-warning fs-5 mb-4 pt-4 fw-bold text-start ps-4">Quick Links</h2>
+            <ul class=" quick-links  ps-4 list-unstyled ">
+              <a href="index.html">
+                <li class="mb-3">Home</li>
+              </a>
+              <a href="./about.html">
+                <li class="mb-3">About</li>
+              </a>
+              <a href="#menu-item">
+                <li class="mb-3">Menu</li>
+              </a>
+              <a href="#foot">
+                <li class="mb-3">Contact</li>
+              </a>
+              <a href="https://www.wix.com/about/privacy">
+                <li class="mb-3">Privacy Policy</li>
+              </a>
+              <a href="https://www.wix.com/about/terms-of-use">
+                <li class="mb-3">Terms & Service</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class=" text-center ps-4 h-100" style="background-color: #2b3035; ">
+            <h2 class="text-warning text-start fs-5 pe-5 mb-4 me-5 fw-bold pt-4">Contact Us</h2>
+            <div class="text-start text-light">
+              <p><span class="bi bi-geo-alt-fill me-2"></span><a style="text-decoration: none; color: inherit;"
+                  href="https://maps.app.goo.gl/xUTQ4XxhHoc9SVxZA">Asian Satyam Mall, Ameerpet, Hyderabad</a>
+              </p>
+              <p><span class="bi bi-telephone-fill me-2"></span><a href="tel:+91 987654321"></a>+91 987654321
+              </p>
+              <p><span class="bi bi-envelope-fill me-2"></span><a style="text-decoration: none; color: inherit;"
+                  href="mailto:satyaranjanmoharana77@gmail.com">satyaranjanmoharana77@gmail.com</a></p>
+              <p><span class="bi bi-clock me-2"></span>Mon-Sun:10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="social-media fs-4 d-flex justify-content-start align-items-center text-light" style="gap: 7%;">
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-facebook"></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-instagram"></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-twitter"></span></a>
+              <a class="d-flex justify-content-center align-items-center social-icon" href=#><span
+                  class="bi bi-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center " style="height: 4rem; background-color:#272b2f;">
+      <div class="copy-foot h-100 d-flex justify-content-between align-items-center text-secondary">
+        <div class="foot-con-1 text-center">
+          <span>&copy; 2025 Urban taste </span> |
+          <span>Design by Satyaranjan7777</span> |
+          <span> All rights Reserved.</span>
+        </div>
+        <div class="foot-con-2">
+          <span><i>MASTER CARD</i></span>
+          <span><i>PAYPAL</i></span>
+          <span><i>VISA</i></span>
+          <span><i>FEDEX</i></span>
+          <span><i>DHL</i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/script.js"></script>
 </body>
 
 </html>
