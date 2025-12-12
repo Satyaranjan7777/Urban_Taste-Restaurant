@@ -10,14 +10,43 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./src/style.css">
- <script src="./src/script.js"></script>
+  <!-- <script src="./src/script.js"></script> -->
+
+  <!-- <script>
+    const form = document.getElementById("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();  // prevent page reload
+
+      // you can collect values like this:
+      const name = document.getElementById("OrdName").value;
+      const email = document.getElementById("OrdEmail").value;
+      const loc = document.getElementById("OrdLocation").value;
+      const qty = document.getElementById("OrdQty").value;
+//
+      console.log(name, email, loc, qty);
+
+      // CLOSE order modal
+      var orderModal = bootstrap.Modal.getInstance(document.getElementById('order'));
+      orderModal.hide();
+
+      // OPEN success modal
+      var successModal = new bootstrap.Modal(document.getElementById('success'));
+      successModal.show();
+
+      // OPTIONAL: Reset form
+      form.reset();
+    });
+  </script> -->
+
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand mx-0 my-0  pe-3" href="#"><img class="pe-1" src="./images/page-logo - Copy.png" height="40" width="60">
+        <a class="navbar-brand mx-0 my-0  pe-3" href="#"><img class="pe-1" src="./images/page-logo - Copy.png"
+            height="40" width="60">
           <span class="urban">URBAN</span><span class="taste">taste</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +58,7 @@
               <a class="nav-link  fs-5 fw-bold pe-5" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 fw-bold pe-5" href="#">About</a>
+              <a class="nav-link fs-5 fw-bold pe-5" href="./about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link active dropdown-toggle fs-5 fw-bold pe-5" href="manu.html" role="button"
@@ -61,9 +90,9 @@
   <!-- Login  -modal......... -->
 
 
-  <div class="modal fade" id="login">
+  <div class="modal fade" id="login" style="--bs-modal-width: 550px;">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-light" style="width: 85%;">
+      <div class="modal-content bg-dark text-light">
         <form class="px-4 py-3"
           style="display: flex; justify-content:center; align-items:center; flex-direction: column;">
           <div class="text-start fs-2 fw-bold"><span class="bi bi-person-fill"></span> Log In</div>
@@ -143,6 +172,51 @@
     </div>
   </div>
 
+  <!-- Table Booking-modal......... -->
+  <div class="modal fade theme-dark" id="table-booking">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <form class="px-4 py-4  text-dark" style="background-color: #be7fff42;">
+          <h2 class="fw-bold text-center ">Book Your Table</h2>
+          <div class=" mb-3">
+            <label class="fw-bold form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class=" mb-3">
+            <label class="fw-bold form-label">Phone Number</label>
+            <input type="tel" name="number" class="form-control" placeholder="Enter phone number" required
+              pattern="[0-9]{10}">
+          </div>
+
+          <div class=" mb-4">
+            <label class="fw-bold form-label">Email Address</label>
+            <input type="email" name="email" class="form-control" placeholder="Enter email">
+          </div>
+          <div>
+            <select class="form-select mb-4" name="members">
+              <option class="">No. of Members</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+          <div>
+            <input class="form-control mb-5" type="date" name="date">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary rounded-pill w-50" onclick="clickBtnTable()">Book Now</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
 
   <section>
     <div class="menu-hero">
@@ -155,7 +229,8 @@
               </p>
               <div class="text-center">
                 <a href="#menu-item"> <button class="btn btn-danger rounded-pill">View Menu</button></a>
-                <button class="btn btn-warning rounded-pill">Book a Table</button>
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#table-booking">Book
+                  a Table</button>
               </div>
             </div>
           </div>
@@ -173,27 +248,29 @@
     <div class="modal fade" id="order">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <form class="p-4">
+          <form class=" form p-4" id="Oform">
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Name</lable>
-              <input class="form-control" required type="text" name="name">
+              <input class="form-control" required id="OrdName" type="text" name="name">
+              <!-- // oninput="Datastore(event)" -->
             </div>
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Email</lable>
-              <input class="form-control" required type="email" name="email">
+              <input class="form-control" required type="email" id="OrdEmail" name="email">
 
             </div>
             <div class="mb-3">
               <lable class="form-label fw-bold">Enter Your Location</lable>
-              <input class="form-control" required type="text" name="location">
+              <input class="form-control" required type="text" id="OrdLocation" name="location">
             </div>
             <div class="mb-3">
               <label class="form-label fw-bold" for="">Quantity</label>
-              <input class="form-control" required type="number" name="quantity" size="2" minlength="1" maxlength="2">
+              <input class="form-control" required type="number" id="OrdQty" name="quantity" size="2">
             </div>
             <div class=" text-end">
-              <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#cancel" >Close</button>
-              <button type="submit" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#success"  >Place
+              <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#cancel"
+                data-bs-dismiss="modal">Close</button>
+              <button id="Obtn" type="submit" class="btn btn-success">Place
                 Order</button>
             </div>
           </form>
@@ -216,7 +293,7 @@
       </div>
     </div>
 
-     <div class="modal fade" id="cancel">
+    <div class="modal fade" id="cancel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class=" d-flex justify-content-center align-items-center text-danger" style="height: 200px;">
@@ -227,14 +304,14 @@
       </div>
     </div>
 
-     <!-- success modal-end >>>>>>>>>>>>>>>>>>>> -->
+    <!-- success modal-end >>>>>>>>>>>>>>>>>>>> -->
     <div class="menu-container" id="menu-item">
-      <h1 class="pt-5 text-Dark text-center fw-bold "  
-        style="font-family: system-ui; background-color: aliceblue; margin: 0px;">Discover Our Menu</h1>
+      <h1 class=" fs-1 pt-5 text-warning text-center fw-bold "
+        style="font-family: 'Forte'; background-color: rgb(243, 250, 220); margin: 0px;">Discover Our Menu</h1>
 
       <div class="pt-5 pb-3 text-success text-center fw-bold " id="veg"
-        style="font-family: system-ui; background-color: aliceblue;">
-        <h2 class="pt-4">VEGITERIAN DISHES</h2>
+        style="font-family: system-ui; background-color:rgb(243, 250, 220);">
+        <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">VEGITERIAN DISHES</h2>
       </div>
       <div class="card-row-container">
 
@@ -245,7 +322,7 @@
               <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
                 <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
@@ -299,13 +376,13 @@
             </div>
           </div>
           <!-- new card............. -->
-              <div class=" item-card card ">
+          <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-1 "></div>
             <div class="card-body cd-body">
               <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
                 <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
@@ -376,14 +453,14 @@
               </div>
             </div>
           </div>
-              <!-- new card............. -->
-              <div class=" item-card card ">
+          <!-- new card............. -->
+          <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-1 "></div>
             <div class="card-body cd-body">
               <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
                 <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
@@ -393,10 +470,10 @@
       </div>
 
 
-     <div class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
-        style="font-family: system-ui; background-color: aliceblue;">
-       <h2 class="pt-4">NON-VEGETERIAN DISHES</h2>
-     </div>
+      <div class="pt-5 pb-3 text-danger text-center fw-bold " id="non-veg"
+        style="font-family: system-ui; background-color: rgb(243, 250, 220);">
+        <h2 class="pt-4 fw-bold" style="font-family: Viner Hand ITC;">NON-VEGETERIAN DISHES</h2>
+      </div>
 
       <div class="card-row-container">
 
@@ -461,14 +538,14 @@
             </div>
           </div>
 
-              <!-- new card............. -->
-              <div class=" item-card card ">
+          <!-- new card............. -->
+          <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-1 "></div>
             <div class="card-body cd-body">
               <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
                 <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
@@ -478,7 +555,7 @@
         </div>
       </div>
 
-      <div class="card-row-container mb-5">
+      <div class="card-row-container ">
 
         <div class="card-row">
           <div class=" item-card card ">
@@ -541,14 +618,14 @@
             </div>
           </div>
 
-              <!-- new card............. -->
-              <div class=" item-card card ">
+          <!-- new card............. -->
+          <div class=" item-card card ">
             <div class=" item-card-img card-header i-c-img-1 "></div>
             <div class="card-body cd-body">
               <h3 class="fs-6 fw-bold mt-1 mb-4">Baby Corn</h3>
               <div class=" d-flex justify-content-around " style="gap: 10%;">
                 <div class="fs-6 "><span class="fw-bold text-success">&#8377 70</div>
-                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order" >Buy
+                <button class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#order">Buy
                   Now</button>
               </div>
             </div>
@@ -586,7 +663,7 @@
               <a href="index.html">
                 <li class="mb-3">Home</li>
               </a>
-              <a href="#">
+              <a href="./about.html">
                 <li class="mb-3">About</li>
               </a>
               <a href="#menu-item">
@@ -595,10 +672,10 @@
               <a href="#foot">
                 <li class="mb-3">Contact</li>
               </a>
-              <a href="#">
+              <a href="https://www.wix.com/about/privacy">
                 <li class="mb-3">Privacy Policy</li>
               </a>
-              <a href="#">
+              <a href="https://www.wix.com/about/terms-of-use">
                 <li class="mb-3">Terms & Service</li>
               </a>
             </ul>
@@ -647,6 +724,7 @@
       </div>
     </div>
   </footer>
+  <script src="./src/script.js"></script>
 </body>
 
 </html>
