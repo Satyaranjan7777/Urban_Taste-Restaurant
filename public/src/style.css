@@ -941,7 +941,10 @@
         background-repeat: no-repeat;
         border-radius: 25px;
     }
+     .chiefPng {
+       display: none;
 
+    }
     .welcome-title {
         font-size: 25px;
         font-weight: bold;
